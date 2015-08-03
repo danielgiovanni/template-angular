@@ -18,7 +18,7 @@
             appErrorPrefix: undefined
         };
 
-        this.configure = function (appErrorPrefix) {
+        this.configure = function(appErrorPrefix) {
             this.config.appErrorPrefix = appErrorPrefix;
         };
 

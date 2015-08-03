@@ -3,19 +3,19 @@
 
     angular
         .module('blocks.router')
-        .provider('routehelper', routeHelperProvider)
+        .provider('routehelper', RouteHelperProvider);
 
     /* @ngInject */
-    function routeHelperProvider($locationProvider, $stateProvider, $urlRouterProvider) {
+    function RouteHelperProvider($locationProvider, $stateProvider, $urlRouterProvider) {
         this.$get = RouterHelper;
         //$locationProvider.html5Mode(true);
 
         /* @ngInject */
         function RouterHelper($state, $rootScope, logger) {
-            var docTitle = "myBCA";
+            var docTitle = 'myBCA';
             var handlingRouteChangeError = false;
             var hasOtherwise = false;
-            var otherwisePath = "promo";
+            var otherwisePath = 'promo';
 
             var service = {
                 configureStates: configureStates,
@@ -56,7 +56,7 @@
                         //}
                         //handlingRouteChangeError = true;
                         var msg = 'Error routing to ' + toState + '. ' + (error || '');
-                        logger.warning(msg, [current]);
+                        logger.warning(msg, [fromState]);
                         //$location.path('/');
                     }
                 );
