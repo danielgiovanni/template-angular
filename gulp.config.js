@@ -1,7 +1,3 @@
-/**
- * Created by romy.kusuma on 5/13/2015.
- */
-
 module.exports = function() {
     var client = './src/client/';
     var clientApp = client + 'app/';

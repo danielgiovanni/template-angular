@@ -1,8 +1,8 @@
 {
-  "name": "Apollo",
-  "version": "0.0.1",
-  "homepage": "https://github.com/GDP-ADMIN/Apollo",
-  "description": "myBCA Project",
+  "name": "Your Project Name",
+  "version": "0.1.0",
+  "homepage": "Github Link",
+  "description": "Your project's description",
   "license": "MIT",
   "ignore": [
     "**/.*",

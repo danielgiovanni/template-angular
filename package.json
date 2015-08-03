@@ -1,12 +1,12 @@
 {
-  "name": "Apollo",
+  "name": "Your Project Name",
   "version": "0.1.0",
-  "description": "myBCA Project",
+  "description": "Your project's description",
   "main": "",
   "scripts": {
     "init": "npm install"
   },
-  "author": "GDP Labs",
+  "author": "Anonymous",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.12.4",
