@@ -6,7 +6,7 @@
     
 	<!-- build:css styles/lib.css -->
 	<!-- bower:css -->
-    <!-- endbower -->
+	<!-- endbower -->
 	<!-- endbuild -->
 
 	<!-- build:css styles/app.css -->
@@ -18,11 +18,30 @@
     
 	<!-- build:js js/lib.js -->
     <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/rfc6570/rfc6570.js"></script>
+    <script src="bower_components/angular-hal/angular-hal.js"></script>
     <!-- endbower -->
 	<!-- endbuild -->
 
 	<!-- build:js js/app.js -->
     <!-- inject:js -->
+    <script src="/src/client/app/app.module.js"></script>
+    <script src="/src/client/app/core/core.module.js"></script>
+    <script src="/src/client/app/layout/layout.module.js"></script>
+    <script src="/src/client/app/widget/widget.module.js"></script>
+    <script src="/src/client/app/blocks/exception/exception.module.js"></script>
+    <script src="/src/client/app/blocks/logger/logger.module.js"></script>
+    <script src="/src/client/app/blocks/router/router.module.js"></script>
+    <script src="/src/client/app/blocks/exception/exception-handler.provider.js"></script>
+    <script src="/src/client/app/blocks/exception/exception.js"></script>
+    <script src="/src/client/app/blocks/logger/logger.js"></script>
+    <script src="/src/client/app/blocks/router/routehelper.js"></script>
     <!-- endinject -->
 	<!-- endbuild -->
 
