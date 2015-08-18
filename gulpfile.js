@@ -6,6 +6,7 @@ var config = require('./gulp.config')();
 var del = require('del');
 var $ = require('gulp-load-plugins')({lazy: true});
 var port = process.env.PORT || config.defaultPort;
+var watch = require('gulp-watch');
 
 /**
  * Default task
@@ -267,6 +268,9 @@ function startBrowserSync(isDev, specRunner) {
 
     if (isDev) {
         gulp.watch([config.less], ['styles']);
+        watch(config.js, function() {
+            gulp.start('wiredep');
+        });
     } else {
         gulp.watch([config.less, config.js, config.html], ['optimize', browserSync.reload]);
     }
